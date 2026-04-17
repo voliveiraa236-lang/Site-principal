@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		
-		<meta charset="UTF-8">
-		<title>Login página</title>
-		<link rel="stylesheet" href="style.css">
-		
-		<link rel="stylesheet" href="header.css">
-		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
-	
-		<body>
-			<header>
-				<nav id="nav_bar">
-					<i class="fa-solid fa-shirt" id="nav_logo">Camisas</i>
-					
-					<ul id="nav_list">
-						
-						<li class="nav-item">
-							<a href="#home">Início</a>
-							
-							<li class="nav-item">
-							<a href="#Products">Produtos</a>
-							
-							<li class="nav-item">
-							<a href="#Informations">Informações</a>
-							
-						</li>
-					</ul>
-			<button class="btn-defoult">
-				Peça aqui
-			</button>
-			
-			<button id="mobile_btn" <i class="fa-solid fa-bars"></i>
-			</button>
-			
-				</nav>
-				
-				<div id="mobile_menu">
-					<ul id="mobile_nav_list">
-						
-						<li class="nav-item">
-							<a href="#home">Início</a>
-							
-							<li class="nav-item">
-							<a href="#Products">Produtos</a>
-							
-							<li class="nav-item">
-							<a href="#Informations">Informações</a>
-							
-						</li>
-						<button class="btn-defoult">
-				Peça aqui
-			</button>
-					</ul>
-				</div>
-			</header>
-		</body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Completo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="topbar">
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="title">Meu App</div>
+
+    <div class="right">
+        <i class="fas fa-search search-btn"></i>
+        <i class="fas fa-user"></i>
+
+        <div class="cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- PESQUISA -->
+<div class="search-box">
+    <input type="text" placeholder="Pesquisar...">
+</div>
+
+<!-- MENU -->
+<div class="menu">
+    <div class="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Avaliações</a></li>
+    </ul>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay"></div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
