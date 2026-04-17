@@ -1,3 +1,4 @@
+/* RESET */
 body {
     margin: 0;
     padding-top: 60px;
@@ -8,7 +9,9 @@ body {
 .topbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    height: 60px;
 
     display: flex;
     align-items: center;
@@ -16,46 +19,47 @@ body {
 
     background: #111;
     color: white;
-    padding: 12px;
+
+    padding: 0 15px;
+    box-sizing: border-box;
 
     z-index: 2000;
 }
 
-/* botão menu */
-.menu-btn {
+/* BOTÃO MENU */
+#menuBtn {
     font-size: 22px;
     cursor: pointer;
+    z-index: 3000;
 }
 
-/* título */
+/* TÍTULO CENTRAL */
 .title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* direita */
+/* DIREITA (ÍCONE) */
 .right {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
-/* ícones */
 .right i {
-    margin-left: 12px;
     cursor: pointer;
 }
 
-/* carrinho */
+/* CARRINHO */
 .cart {
     position: relative;
-    margin-left: 12px;
 }
 
 .cart-count {
     position: absolute;
-    top: -6px;
-    right: -8px;
+    top: -5px;
+    right: -6px;
     background: red;
     color: white;
     font-size: 10px;
@@ -78,9 +82,10 @@ body {
     width: 100%;
     padding: 10px;
     border: none;
+    outline: none;
 }
 
-/* MENU */
+/* MENU LATERAL */
 .menu {
     position: fixed;
     top: 0;
@@ -90,14 +95,14 @@ body {
     background: #111;
     transition: 0.3s;
     padding-top: 60px;
-    z-index: 1000;
+    z-index: 2500;
 }
 
 .menu.active {
     left: 0;
 }
 
-/* X */
+/* BOTÃO FECHAR*/
 .close-btn {
     position: absolute;
     top: 15px;
@@ -107,10 +112,11 @@ body {
     cursor: pointer;
 }
 
-/* lista */
+/* LISTA MENU */
 .menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .menu ul li {
@@ -120,9 +126,16 @@ body {
 .menu ul li a {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
-/* OVERLAY */
+/* ÍCONES DO MENU */
+.menu ul li i {
+    margin-right: 10px;
+}
+
+/* OVERLAY (FUNDO ESCURO) */
 .overlay {
     position: fixed;
     width: 100%;
@@ -132,7 +145,8 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
-    z-index: 999;
+
+    z-index: 2000;
 }
 
 .overlay.active {

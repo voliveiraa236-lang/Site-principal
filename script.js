@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     const menu = document.querySelector(".menu");
-    const openBtn = document.querySelector(".menu-btn");
-    const closeBtn = document.querySelector(".close-btn");
     const overlay = document.querySelector(".overlay");
+
+    const openBtn = document.getElementById("menuBtn");
+    const closeBtn = document.querySelector(".close-btn");
 
     const searchBtn = document.querySelector(".search-btn");
     const searchBox = document.querySelector(".search-box");
@@ -14,29 +15,29 @@ document.addEventListener("DOMContentLoaded", function(){
     let count = 0;
 
     // MENU
-    openBtn.onclick = () => {
+    openBtn.onclick = function(){
         menu.classList.add("active");
         overlay.classList.add("active");
     };
 
-    closeBtn.onclick = () => {
+    closeBtn.onclick = function(){
         menu.classList.remove("active");
         overlay.classList.remove("active");
     };
 
-    overlay.onclick = () => {
+    overlay.onclick = function(){
         menu.classList.remove("active");
         overlay.classList.remove("active");
     };
 
-    // PESQUISA
-    searchBtn.onclick = () => {
+    // SEARCH
+    searchBtn.onclick = function(){
         searchBox.style.display =
             searchBox.style.display === "block" ? "none" : "block";
     };
 
     // CARRINHO
-    cart.onclick = () => {
+    cart.onclick = function(){
         count++;
         cartCount.textContent = count;
     };

@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Menu Completo</title>
+<meta charset="UTF-8">
+<title>Menu Completo</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <div class="topbar">
-
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
+    <div id="menuBtn"><i class="fas fa-bars"></i></div>
 
     <div class="title">Meu App</div>
 
@@ -29,31 +27,27 @@
             <span class="cart-count">0</span>
         </div>
     </div>
-
 </div>
 
-<!-- PESQUISA -->
+<!-- SEARCH -->
 <div class="search-box">
     <input type="text" placeholder="Pesquisar...">
 </div>
 
 <!-- MENU -->
 <div class="menu">
-    <div class="close-btn">
-        <i class="fas fa-times"></i>
-    </div>
+    <div class="close-btn"><i class="fas fa-times"></i></div>
 
     <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Avaliações</a></li>
+        <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+<li><a href="#"><i class="fas fa-user"></i> Sobre</a></li>
+<li><a href="#"><i class="fas fa-star"></i> Avaliações</a></li>
     </ul>
 </div>
 
-<!-- OVERLAY -->
+<!--OVERLAY-->
 <div class="overlay"></div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
